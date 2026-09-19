@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Courses | CampusConnect</title>
+<meta name="description" content="CampusConnect: departments, courses, student services and contacts in one place.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><div class="wrap">
+<a class="brand" href="index.html">Campus<span>Connect</span></a>
+<nav aria-label="Main">
+<a href="index.html">Home</a>
+<a href="departments.html">Departments</a>
+<a href="courses.html" aria-current="page">Courses</a>
+<a href="services.html">Student Services</a>
+<a href="contact.html">Contact</a>
+</nav></div></header>
+<main><div class="wrap">
+<h1>Courses</h1>
+<p class="lead">Filter the course list by keyword or department.</p>
+<div class="filters">
+<div><label for="q">Search courses</label><input id="q" type="search" placeholder="Code or name"></div>
+<div><label for="dept">Department</label><select id="dept"></select></div>
+</div>
+<p id="count" aria-live="polite"></p>
+<div class="tablewrap"><table>
+<thead><tr><th>Code</th><th>Course</th><th>Department</th><th>Credits</th><th>Level</th><th>Offered</th></tr></thead>
+<tbody id="course-body"></tbody>
+</table></div>
+</div></main>
+<footer><div class="wrap">CampusConnect &copy; 2026. Sample information for a university project. Help desk: help@campusconnect.edu</div></footer>
+<script src="js/script.js"></script>
+</body>
+</html>

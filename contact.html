@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | CampusConnect</title>
+<meta name="description" content="CampusConnect: departments, courses, student services and contacts in one place.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><div class="wrap">
+<a class="brand" href="index.html">Campus<span>Connect</span></a>
+<nav aria-label="Main">
+<a href="index.html">Home</a>
+<a href="departments.html">Departments</a>
+<a href="courses.html">Courses</a>
+<a href="services.html">Student Services</a>
+<a href="contact.html" aria-current="page">Contact</a>
+</nav></div></header>
+<main><div class="wrap">
+<h1>Contact</h1>
+<p class="lead">Call, email or visit us. Or send a student enquiry and we will reply.</p>
+<div class="two">
+<div class="panel">
+<h2>Reach us</h2>
+<dl>
+<dt>Address</dt><dd>CampusConnect University, University Road, Rawalpindi</dd>
+<dt>Phone</dt><dd><a href="tel:+920510000000">+92 51 000 0000</a></dd>
+<dt>General email</dt><dd><a href="mailto:info@campusconnect.edu">info@campusconnect.edu</a></dd>
+<dt>Admissions</dt><dd><a href="mailto:admissions@campusconnect.edu">admissions@campusconnect.edu</a></dd>
+<dt>Office hours</dt><dd>Monday to Friday, 8:30 am to 4:30 pm</dd>
+</dl>
+</div>
+<div class="panel">
+<h2>Student enquiry</h2>
+<form id="enquiry" novalidate>
+<label for="name">Full name</label>
+<input id="name" name="name" autocomplete="name"><p class="err" id="name-err"></p>
+<label for="email">Email</label>
+<input id="email" name="email" type="email" autocomplete="email"><p class="err" id="email-err"></p>
+<label for="topic">Enquiry about</label>
+<select id="topic" name="topic"><option value="">Choose a topic</option><option>Admissions</option><option>Courses</option><option>Fees and financial aid</option><option>Student services</option><option>Other</option></select><p class="err" id="topic-err"></p>
+<label for="message">Message</label>
+<textarea id="message" name="message" rows="4"></textarea><p class="err" id="message-err"></p>
+<button type="submit">Send enquiry</button>
+<div id="form-msg" class="msg" role="status" aria-live="polite"></div>
+</form>
+</div>
+</div>
+</div></main>
+<footer><div class="wrap">CampusConnect &copy; 2026. Sample information for a university project. Help desk: help@campusconnect.edu</div></footer>
+<script src="js/script.js"></script>
+</body>
+</html>
