@@ -19,7 +19,7 @@ const COURSES=[
 ["SSH101","Introduction to Psychology","ssh",3,"Year 1","Fall"],
 ["SSH240","Media & Society","ssh",3,"Year 2","Spring"]];
 
-const deptById=id=>DEPARTMENTS.find(d=>d.id===id);
+const deptByIdR=id=>DEPARTMENTS.find(d=>d.id===id);
 
 // Departments page
 const grid=document.getElementById("dept-grid");
